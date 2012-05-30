@@ -1,0 +1,7 @@
+#RewriteEngine On
+#«амените ?mysite\.com/ на адрес вашего блога
+#RewriteCond %{HTTP_REFERER} !^http://(.+\.)?vkino\.ru/ [NC]
+#RewriteCond %{HTTP_REFERER} !^$
+#«амените /images/nohotlink.jpg на ваше изображение с запрещением хотлинка
+#RewriteRule .*\.(jpe?g|gif|bmp|png)$ http://vkino\.ru/images/nohotlink\.jpg [L]
+ErrorDocument 404 /404.php
